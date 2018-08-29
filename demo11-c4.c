@@ -56,6 +56,7 @@ int main(int arg, char *args[])
     }
     strcpy(tmp, "456"); //向tmp指向的内存空间中copy数据
     printf("tmp:%s\n", tmp);
+
     //tmp2 = GetMem2();
     //printf("tmp2:%s\n", tmp2);
     printf("hello,world\n");
