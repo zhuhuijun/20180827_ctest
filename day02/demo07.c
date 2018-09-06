@@ -47,10 +47,18 @@ int main(int arg, char *args[])
     //指针
     printf("-------------------------\n");
     p = buf; //buf代表数组首元素的地址
+    //buf是一个指针，是一个常量指针
+    //析构内存的时候，保证指向的内存空间安全释放
+    /*
     while (*p != '\0')
     {
         printf("%c\n", *p);
         p++;
+    }
+    */
+    for (i = 0; i < strlen(buf); i++)
+    {
+        printf("%c\n", *(buf + i));
     }
     printf("hello,world");
     system("pause");
