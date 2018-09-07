@@ -17,7 +17,7 @@ void getFileLen(int *p)
 
 int getFileLen(int *p)
 {
-    a = 400;
+    int a = 400;
     return a;
 }
 int main(int arg, char *args[])

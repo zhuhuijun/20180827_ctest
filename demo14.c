@@ -12,7 +12,7 @@ int main(int arg, char *args[])
 {
     char *p = getTemp();
     printf("p:%s\n", p);
-    //*(p + 2) = "2";
+    //*(p + 2) = "2";//报错,全局区不能被修改
     printf("hello,world");
     system("pause");
     return 1;

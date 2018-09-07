@@ -58,6 +58,29 @@ void copyStr4(char *from, char *to)
         ;
     }
 }
+void copyStr5(char *from, char *to)
+{
+    int ret = 0;
+    if (from == NULL || to == NULL)
+    {
+        ret = -1;
+        return ret;
+    }
+    printf("from:%s \n", from);
+    char *tmpfrom = NULL;
+    char *tmpto = NULL;
+    tmpfrom = from;
+    tmpto = to;
+    //form形参 形参to 的值 不停的在变化....
+    //不断的修改了myfrom和myto的指向
+    while (*tmpto++ = *tmpfrom++) //*操作 和++的操作; ++ 优先级高 //  后置++，先 *to = *from;  再from++, to++
+    {
+        ;
+    }
+    //没有缓冲就无法打印
+    printf("from:%s \n", from);
+    return ret;
+}
 //字符串函数参数copy推演
 int main(int arg, char *args[])
 {
