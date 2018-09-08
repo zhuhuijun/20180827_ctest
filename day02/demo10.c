@@ -78,6 +78,10 @@ int main(int arg, char *args[])
     int ncount = 0;
     char sub[] = "abc";
     int r = getStrCount(p, sub, &ncount);
+    if (r != 0)
+    {
+        printf("getStrCount error\n";)
+    }
     printf("mm=======ncount:%d\n", ncount);
     printf("hello,world");
     system("pause");
