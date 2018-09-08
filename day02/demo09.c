@@ -57,8 +57,9 @@ void copyStr4(char *from, char *to)
     {
         ;
     }
+    //printf("from:%s\n", from);
 }
-void copyStr5(char *from, char *to)
+int copyStr5(char *from, char *to)
 {
     int ret = 0;
     if (from == NULL || to == NULL)
@@ -93,6 +94,8 @@ int main(int arg, char *args[])
     copyStr3(from, to);
     printf("to:%s\n", to);
     copyStr4(from, to);
+    printf("to:%s\n", to);
+    copyStr5(from, to);
     printf("to:%s\n", to);
     printf("hello,world");
     system("pause");
