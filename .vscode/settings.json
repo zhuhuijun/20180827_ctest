@@ -2,6 +2,7 @@
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
         "stdlib.h": "c",
-        "istream": "c"
+        "istream": "c",
+        "ctype.h": "c"
     }
 }
