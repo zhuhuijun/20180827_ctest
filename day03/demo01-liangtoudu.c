@@ -32,16 +32,13 @@ int main01(int arg, char *args[])
 int getCount(char *p, int *count)
 {
     char *source = NULL;
-    int ret;
-    ret = 0;
-    int i, j, ncount;
-    ncount = 0;
+    int ret = 0;
+    int i = 0, j = 0, ncount = 0;
     if (p == NULL || count == NULL)
     {
         return -1;
     }
     source = p;
-    i = 0;
     j = strlen(source) - 1;
     while (isspace(source[i]) && source[i] != '\0')
     {
@@ -57,6 +54,31 @@ int getCount(char *p, int *count)
     *count = ncount;
     return ret;
 }
+//去除前后空格
+int trimSpce(char *p, char *out)
+{
+    char *source = NULL;
+    int ret = 0;
+    int i = 0, j = 0, ncount = 0;
+    if (p == NULL || out == NULL)
+    {
+        return -1;
+    }
+    source = p;
+    j = strlen(source) - 1;
+    while (isspace(source[i]) && source[i] != '\0')
+    {
+        i++;
+    }
+    while (isspace(source[j]) && source[j] != '\0')
+    {
+        j--;
+    }
+    ncount = j - i + 1;
+    strncpy(out, p + i, ncount);
+    out[ncount] = '\0';
+    return ret;
+}
 
 int main(int arg, char *args[])
 {
@@ -69,6 +91,9 @@ int main(int arg, char *args[])
         return -1;
     }
     printf("ncount:%d\n", ncount);
+    char bufnew[1024] = {0};
+    trimSpce(source, bufnew);
+    printf("newstr:%s\n", bufnew);
     printf("hello,world");
     system("pause");
     return 1;
