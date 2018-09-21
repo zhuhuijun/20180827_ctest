@@ -22,6 +22,7 @@ void sortArr(char **marr, int num)
 {
     int i = 0;
     int j = 0;
+    char *tmp = NULL;
     for (i = 0; i < num; i++)
     {
         for (j = i; j < num; j++)
