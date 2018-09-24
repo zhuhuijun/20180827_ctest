@@ -6,11 +6,11 @@
  * 定义数组指针的方法
  * 
  * 
- * 
- * 
- * 
- * 
- * 
+ * typedef int(MYINT5)[5]; //int[5]
+ * MYINT5 marr5; 
+ * MYINT5 *pmarr5;
+ * int myarr2[5];
+ * pmarr5 = &myarr2;
  * 
  * 
  * 
