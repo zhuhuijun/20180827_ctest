@@ -4,6 +4,7 @@
         "stdlib.h": "c",
         "istream": "c",
         "ctype.h": "c",
-        "initializer_list": "c"
+        "initializer_list": "c",
+        "typeinfo": "c"
     }
 }

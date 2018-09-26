@@ -42,7 +42,8 @@ int main(int arg, char *args[])
         "while",
         "case",
         "static",
-        "do"};
+        "do",
+        '\0'};
     searchKeyTable(c_keyword, DIM(c_keyword), "do", &pos);
     printf("pos:%d\n", pos);
     searchKeyTable(c_keyword, DIM(c_keyword), "static", &pos);
