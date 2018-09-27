@@ -17,7 +17,7 @@ void copyTacher(Teacher to, Teacher from)
 }
 void copyTacher2(Teacher *to, Teacher *from)
 {
-    (*to) = (*from); //从from到to和t1,t3没关系
+    (*to) = (*from); 
 }
 //匿名定义变量
 int main(int arg, char *args[])
