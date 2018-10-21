@@ -10,6 +10,7 @@ typedef struct Teacher
 
 Teacher *CreateTeachers()
 {
+    //这些是栈上的会消失
     Teacher t1;
     Teacher t2;
     Teacher t3;
